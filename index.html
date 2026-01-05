@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Simple Site on Amplify</title>
+  <style>body { font-family: Arial; text-align: center; padding: 50px; }</style>
+</head>
+<body>
+  <h1>Hello from Static Site on AWS Amplify!</h1>
+  <p>Deploy thành công. API mock: <strong>Node.js rocks!</strong></p>
+  <script>fetch('/api/hello').then(r => r.json()).then(d => document.body.innerHTML += `<p>${d.message}</p>`).catch(e => console.log(e));</script>
+</body>
+</html>
+
